@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { ArrowBigUpLine, Rocket } from 'tabler-icons-react';
+import { ArrowBigUpLine } from 'tabler-icons-react';
 
 export const ButtonToTop = () => {
   const buttonScrollTop = useRef(null);
@@ -27,7 +27,7 @@ export const ButtonToTop = () => {
       ref={buttonScrollTop}
       className="hidden fixed animate-bounce right-5 bottom-5 z-10 rounded-full p-2 text-white hover:scale-125 transition-all duration-300 "
       style={{
-        background: "linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5, #23d5ab)",
+        background: "linear-gradient(-45deg,#800080, #00FFFF, #00BFFF, #1E90FF, #4169E1)",
       }}
     >
       <ArrowBigUpLine />

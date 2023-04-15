@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Send, Download } from "tabler-icons-react";
 import { SocialsIcons } from "./SocialsIcons";
-import profile from "./profile.png";
+import profile from "../../images/profile.png";
 
 
 export const PanelHero = () => {
@@ -27,7 +27,7 @@ export const PanelHero = () => {
       id="panelHero"
       className="u-center h-screen w-full flex items-center justify-center relative hover:ease-in"
     >
-      <div class="items-center flex flex-wrap">
+      <div className="items-center flex flex-wrap">
         <div className="flex flex-col-reverse justify-center items-center h-full">
           <ul className="fixed bottom-0 left-0 lg:left-10 lg:bottom-10 lg:flex-col flex gap-5 lg:gap-3">
             <SocialsIcons />
@@ -53,7 +53,7 @@ export const PanelHero = () => {
             </a>
           </div>
           
-          <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+          <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
             <div className="flex flex-col items-center justify-center relative">
               <p className="text-xl  md:text-2xl font-semibold">Hola 👋🏼, soy</p>
               <h1
@@ -75,8 +75,8 @@ export const PanelHero = () => {
             </div>
           </div>
         </div>
-        <div class="md:w-4/12 ml-auto mr-auto px-4 hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img alt="Imagen de perfil" class="w-full h-full object-cover" src={profile}></img>
+        <div className="md:w-4/12 ml-auto mr-auto hidden lg:mt-0 lg:col-span-5 lg:flex">
+            <img alt="Imagen de perfil" className="w-full h-full object-cover" src={profile}></img>
         </div>
       </div>
     </section>

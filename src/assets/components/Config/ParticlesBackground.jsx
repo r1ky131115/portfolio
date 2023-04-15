@@ -12,10 +12,11 @@ const ParticlesBackground = () => {
   return (
       <Particles 
       id="particles-js"
+      className='z-0'
       options={particlesConfig}
       style={{
           width: "100vw",
-          height: "100vh"
+          height: "100vh",
       }}
       init={particlesInit}
       />
