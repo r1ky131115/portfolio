@@ -6,6 +6,7 @@ import { PanelHero } from './assets/components/Home/PanelHero';
 import { NavMenu } from './assets/components/NavMenu/NavMenu';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { ProjectsLayout } from './assets/components/Projects/ProjectsLayout';
 
 AOS.init();
 
@@ -16,6 +17,8 @@ function App() {
       <NavMenu />
       <PanelHero />
       <AboutMe />
+      <ProjectsLayout />
+      
       <ButtonToTop />
     </ThemeProvider>
   );
