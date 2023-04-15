@@ -37,14 +37,14 @@ export const PanelHero = () => {
           <div className="flex flex-col font-bold text-2xl mt-3 gap-4 w-full items-center justify-center md:flex-row">
             <a
               href="#contactame"
-              className="bg-[var(--bg-buttons)] text-[var(--text-buttons)] rounded flex items-center gap-2 justify-center h-16 w-56 hover:scale-110"
+              className="bg-[var(--bg-buttons)] text-[var(--text-buttons)] rounded flex items-center gap-2 justify-center h-16 w-56 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 duration-300"
             >
               <Send className="h-6 w-6" />
               Contáctame
             </a>
             <a
               href="https://drive.google.com/file/d/1QLqcUwoDTTEWgWJQ7GJyWfhO-gpvigGI/view?usp=share_link"
-              className="bg-[var(--bg-buttons)] text-[var(--text-buttons)] rounded flex items-center gap-2 justify-center h-16 w-56 hover:scale-110"
+              className="bg-[var(--bg-buttons)] text-[var(--text-buttons)] rounded flex items-center gap-2 justify-center h-16 w-56 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 duration-300"
               target="_blank"
               rel="noreferrer"
             >
@@ -76,7 +76,7 @@ export const PanelHero = () => {
           </div>
         </div>
         <div className="md:w-4/12 ml-auto mr-auto hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img alt="Imagen de perfil" className="w-full h-full object-cover" src={profile}></img>
+          <img alt="Imagen de perfil" className="w-full h-full object-cover" src={profile}></img>
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import {
   CircleStackIcon,
   WrenchIcon,
 } from "@heroicons/react/24/outline";
+
 const skills = [
   {
     id: 1,
@@ -144,13 +145,14 @@ export const Skills = () => {
           Mis conocimientos
         </span>
       </div>
-      <div className="mt-5 grid grid-cols-1 md:grid-cols-2 ">
+      <div className="mt-5 grid grid-cols-1 md:grid-cols-2" data-aos="fade-left"
+     data-aos-duration="3000">
         {skills.map((skill) => (
           <div
             className="w-full flex justify-center flex-col items-center mt-5"
             key={skill.id}
           >
-            <span className="h-48 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">{skill.icon}</span>
+            <span className="h-48 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-200">{skill.icon}</span>
             <p className="text-lg flex gap-2 w-fit flex-wrap justify-center">
               {skill.skills.map((skill) => {
                 return (

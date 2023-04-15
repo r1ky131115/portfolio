@@ -13,12 +13,12 @@
     --bg-buttons: #4b69a5;
     --text-buttons: #f8faff;
     --socials-buttons: #a8acb3;
-    --stars: #40E0D0;
+    --particulas: #40E0D0;
   }
   
   [data-theme="light"] {
     /*   Text and Background Styles*/
-    --background: #fff;
+    --background: #C4C4C4 ;
     --foreground: #0f0f0f;
   
     /*   Navbar Styles*/
@@ -26,7 +26,7 @@
     --text-secondary: #5f6368;
     --nav-shadow: #d5d6d8;
     --socials-buttons: #57606a;
-    --stars: #3a3c3c;
+    --particulas: #3a3c3c;
   }
 
   html {
@@ -87,7 +87,6 @@
       --mw-document: 100%;
     }
   }
-
 
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';

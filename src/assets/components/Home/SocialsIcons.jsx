@@ -4,7 +4,7 @@ const iconsList = [
   {
     id: 1,
     icon: (
-      <BrandGithub className="h-10 w-10 hover:scale-125 hover:text-[var(--bg-buttons)]" />
+      <BrandGithub className="h-10 w-10 hover:scale-125 hover:text-[var(--bg-buttons)] transition ease-in-out duration-300" />
     ),
     href: "https://github.com/r1ky131115",
     ariaLabel: "github-icon",
@@ -13,7 +13,7 @@ const iconsList = [
   {
     id: 2,
     icon: (
-      <BrandLinkedin className="h-10 w-10 hover:scale-125 hover:text-[var(--bg-buttons)]" />
+      <BrandLinkedin className="h-10 w-10 hover:scale-125 hover:text-[var(--bg-buttons)] transition ease-in-out duration-300" />
     ),
     href: "https://www.linkedin.com/in/ricardo-luis-aguirre-402b08179/",
     ariaLabel: "linkedin-icon",
@@ -22,7 +22,7 @@ const iconsList = [
   {
     id: 3,
     icon: (
-      <Mail className="h-10 w-10  hover:scale-125 hover:text-[var(--bg-buttons)]" />
+      <Mail className="h-10 w-10  hover:scale-125 hover:text-[var(--bg-buttons)] transition ease-in-out duration-300" />
     ),
     href: "#contactame",
     ariaLabel: "mail-icon",
