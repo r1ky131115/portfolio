@@ -8,8 +8,8 @@ import {
 const skills = [
   {
     id: 1,
-    id_dropdown: "frontend",
-    title: "Frontend",
+    id_dropdown: "frontend/programming language",
+    title: "Frontend/Programming language",
     icon: (
       <CodeBracketIcon
         className="w-36 h-36 text-[var(--bg-buttons)]"
@@ -35,8 +35,12 @@ const skills = [
       },
       {
         id: 4,
-        skill: "ReactJS",
-      }
+        skill: "React JS",
+      },
+      {
+        id: 5,
+        skill: "C #",
+      },
     ],
   },
   {
@@ -56,25 +60,25 @@ const skills = [
     skills: [
       {
         id: 1,
-        skill: ".NET",
-      },
-      {
-        id: 2,
         skill: "SQL",
       },
       {
-        id: 3,
+        id: 2,
         skill: "MySQL",
       },
       {
-        id: 4,
+        id: 3,
         skill: "MongoDB",
+      },
+      {
+        id: 3,
+        skill: "PL / SQL",
       },
     ],
   },
   {
     id: 3,
-    id_dropdown: "Other",
+    id_dropdown: "frameworks",
     icon: (
       <Square3Stack3DIcon
         className="w-36 h-36 text-[var(--bg-buttons)]"
@@ -85,23 +89,27 @@ const skills = [
         }}
       />
     ),
-    title: "Testing",
+    title: "Frameworks",
     skills: [
       {
         id: 1,
-        skill: "Networking",
+        skill: "ASP.NET",
       },
       {
         id: 2,
-        skill: "Ciberseguridad",
+        skill: "ASP.NET MVC",
       },
       {
         id: 3,
-        skill: "Frameworks",
+        skill: "Entity Framework",
       },
       {
         id: 4,
-        skill: "Otras",
+        skill: "Tailwind",
+      },
+      {
+        id: 5,
+        skill: "Bootstrap",
       },
     ],
   },
@@ -122,15 +130,23 @@ const skills = [
     skills: [
       {
         id: 1,
-        skill: "GitHub",
+        skill: "Git / GitHub",
       },
       {
         id: 2,
-        skill: "Scrum",
+        skill: "Networking",
       },
       {
         id: 3,
-        skill: "Kanban",
+        skill: "Ciberseguridad",
+      },
+      {
+        id: 4,
+        skill: "Virtualización",
+      },
+      {
+        id: 5,
+        skill: "Agile Methodologies",
       }
     ],
   },
