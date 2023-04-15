@@ -1,17 +1,94 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+    --mw-document: 1200px;
+    --p-u-center: 0 32px;
+    /*   Text and Background Styles*/
+    --background: #202124;
+    --foreground: #e8eaed;
+    /*   Navbar Styles*/
+    --hover-nav: rgba(64, 224, 208, 0.04);
+    --text-secondary: #9aa0a6;
+    --nav-shadow: #141719;
+  
+    /*   Buttons and Icon Styles*/
+    --bg-buttons: #4b69a5;
+    --text-buttons: #f8faff;
+    --socials-buttons: #a8acb3;
+    --stars: #40E0D0;
+  }
+  
+  [data-theme="light"] {
+    /*   Text and Background Styles*/
+    --background: #fff;
+    --foreground: #0f0f0f;
+  
+    /*   Navbar Styles*/
+    --hover-nav: rgba(32, 33, 36, 0.04);
+    --text-secondary: #5f6368;
+    --nav-shadow: #d5d6d8;
+    --socials-buttons: #57606a;
+    --stars: #3a3c3c;
+  }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: var(--foreground);
+    background-color: var(--background);
+    display: block;
+    margin: 0 auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .u-center {
+    max-width: var(--mw-document);
+    margin: 0 auto;
+    padding: var(--p-u-center);
+  }
+  #sobreMi,
+  #misProyectos,
+  #contactame {
+    padding-top: 80px;
+  }
+  
+  #embedim--snow {
+    z-index: -1 !important;
+  }
+  
+  .embedim-snow {
+    background-color: var(--foreground) !important;
+  }
+  
+  @media screen and (max-width: 700px) {
+    :root {
+      --p-u-center: 0 16px;
+      --p-header-bottom: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 1023px) {
+    :root {
+      --p-separation: 0;
+      --w-aside: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 1300px) {
+    :root {
+      --mw-document: 100%;
+    }
+  }
+
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';

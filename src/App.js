@@ -1,12 +1,14 @@
-import './App.css';
+import ParticlesBackground from './assets/components/Config/ParticlesBackground';
+import { PanelHero } from './assets/components/Home/PanelHero';
+import { NavMenu } from './assets/components/NavMenu/NavMenu';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </div>
+    <>
+      <ParticlesBackground />
+      <NavMenu />
+      <PanelHero />
+    </>
   );
 }
 
