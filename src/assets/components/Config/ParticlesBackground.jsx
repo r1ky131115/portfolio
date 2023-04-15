@@ -12,8 +12,8 @@ const ParticlesBackground = () => {
   return (
       <Particles 
       id="particles-js"
-      className='z-0'
       options={particlesConfig}
+      className='z-0'
       style={{
           width: "100vw",
           height: "100vh",

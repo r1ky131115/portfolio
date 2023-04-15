@@ -10,7 +10,7 @@ export const AboutMe = () => {
 
 
   return (
-    <section className="u-center h-screen w-full relative hover:ease-in" id="sobreMi">
+    <section className="u-center w-full relative" id="sobreMi">
       <div className="w-full flex flex-col justify-center items-center">
         <h1 className="text-5xl font-bold">Sobre mí</h1>
         <span className="text-lg text-[var(--text-secondary)]">

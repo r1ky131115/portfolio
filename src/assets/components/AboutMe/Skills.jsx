@@ -71,7 +71,7 @@ const skills = [
         skill: "MongoDB",
       },
       {
-        id: 3,
+        id: 4,
         skill: "PL / SQL",
       },
     ],

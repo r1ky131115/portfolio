@@ -3,18 +3,18 @@ import { BrandGithub, World } from "tabler-icons-react";
 const projectsInfo = [
   {
     id: 1,
-    proyecto_title: "The Simpsons App",
+    proyecto_title: "Login & Register",
     proyecto_description:
       "Permite buscar citas de los personajes de la serie, también permite ver los detalles de cada personaje de la familia Simpson y ver algunas noticias relacionadas a la serie.",
     proyecto_url_github:
-      "https://github.com/gianlucadonofrio/ctd-esp-front/tree/main/ctd-esp-fe2-final",
-    proyecto_url_web: "https://the-simpson-app.vercel.app/",
+      "",
+    proyecto_url_web: "",
     proyecto_tecnologias: [
-      "ReactJS",
-      "TypeScript",
-      "Styled Components",
-      "Redux",
-      "Jest",
+      "ASP.NET",
+      "HTML",
+      "Bootstrap",
+      "Entity Framework",
+      "SQL",
     ],
   },
   {
@@ -23,8 +23,8 @@ const projectsInfo = [
     proyecto_description:
       "Permite buscar personajes de la serie, ver sus detalles y ver episodios relacionados a cada personaje, además de poder agregarlos a favoritos.",
     proyecto_url_github:
-      "https://github.com/gianlucadonofrio/ctd-esp-front/tree/main/ctd-esp-fe1-final",
-    proyecto_url_web: "https://rick-and-morty-taupe-two.vercel.app/",
+      "",
+    proyecto_url_web: "",
     proyecto_tecnologias: ["ReactJS", "Redux", "TypeScript", "JSDoc"],
   },
   {
@@ -33,8 +33,8 @@ const projectsInfo = [
     proyecto_description:
       "Permite seguir el estado de los issues de un repositorio de Github, además de poder filtrarlos por estado. Se utilizó React Query para manejar el estado de la aplicación. ",
     proyecto_url_github:
-      "https://github.com/gianlucadonofrio/react-query/tree/main/02-react-query-issues",
-    proyecto_url_web: "https://react-query-beta.vercel.app/",
+      "",
+    proyecto_url_web: "",
     proyecto_tecnologias: ["ReactJS", "React Query", "TypeScript"],
   },
 ];
