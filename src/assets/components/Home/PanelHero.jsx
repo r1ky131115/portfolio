@@ -24,7 +24,7 @@ export const PanelHero = () => {
 
   return (
     <section
-      id="panelHero"
+      id="Home"
       className="u-center h-screen w-full flex items-center justify-center relative hover:ease-in"
     >
       <div className="flex flex-col-reverse justify-center items-center h-full">

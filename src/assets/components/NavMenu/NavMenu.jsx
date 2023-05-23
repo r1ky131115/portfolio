@@ -86,7 +86,7 @@ export const NavMenu = () => {
               )}
             </button>
             <a
-              href="/"
+              href="#Home"
               aria-label="Home"
               className="text-3xl font-extrabold text-[var(--foreground)] hover:scale-110 transition-all duration-300 "
             >

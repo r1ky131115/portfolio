@@ -1,5 +1,5 @@
 import { ProjectCard } from "./ProjectCard";
-import { OthersProjects } from "./OthersProjects";
+/*import { OthersProjects } from "./OthersProjects";*/
 
 export const ProjectsLayout = () => {
   return (
@@ -11,7 +11,6 @@ export const ProjectsLayout = () => {
         </span>
       </div>
       <ProjectCard />
-      <OthersProjects />
     </section>
   );
 };

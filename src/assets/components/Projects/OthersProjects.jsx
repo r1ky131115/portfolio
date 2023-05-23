@@ -1,4 +1,4 @@
-import { Folder, BrandGithub, World } from "tabler-icons-react";
+import { Folder, BrandGithub, Eye } from "tabler-icons-react";
 
 const othersProjects = [
   {
@@ -171,7 +171,7 @@ export const OthersProjects = () => {
                   rel="noreferrer"
                   aria-label="web"
                 >
-                  <World className="h-10 w-10 text-[var(--text-secondary)] hover:scale-125 hover:text-[var(--bg-buttons)] cursor-pointer" />
+                  <Eye className="h-10 w-10 text-[var(--text-secondary)] hover:scale-125 hover:text-[var(--bg-buttons)] cursor-pointer" />
                 </a>
               </div>
             </div>

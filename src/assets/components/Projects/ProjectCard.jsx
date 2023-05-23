@@ -1,9 +1,10 @@
-import { BrandGithub, World } from "tabler-icons-react";
+import { BrandGithub, Eye } from "tabler-icons-react";
 
 const projectsInfo = [
   {
     id: 1,
     proyecto_title: "Login & Register",
+    estilo: "flex-row",
     proyecto_description:
       "Permite buscar citas de los personajes de la serie, también permite ver los detalles de cada personaje de la familia Simpson y ver algunas noticias relacionadas a la serie.",
     proyecto_url_github:
@@ -11,15 +12,14 @@ const projectsInfo = [
     proyecto_url_web: "",
     proyecto_tecnologias: [
       "ASP.NET",
-      "HTML",
       "Bootstrap",
       "Entity Framework",
-      "SQL",
     ],
   },
   {
     id: 2,
     proyecto_title: "Rick and Morty App",
+    estilo: "flex-row-reverse",
     proyecto_description:
       "Permite buscar personajes de la serie, ver sus detalles y ver episodios relacionados a cada personaje, además de poder agregarlos a favoritos.",
     proyecto_url_github:
@@ -30,6 +30,7 @@ const projectsInfo = [
   {
     id: 3,
     proyecto_title: "Github Issues",
+    estilo: "flex-row",
     proyecto_description:
       "Permite seguir el estado de los issues de un repositorio de Github, además de poder filtrarlos por estado. Se utilizó React Query para manejar el estado de la aplicación. ",
     proyecto_url_github:
@@ -41,56 +42,87 @@ const projectsInfo = [
 
 export const ProjectCard = () => {
   return (
-    <section>
+    <section className="min-h-screen w-full relative">
       {projectsInfo.map((project) => (
-        <div
-          key={project.id}
-          className="flex flex-col items-center mt-10 justify-center border-2 rounded-lg shadow-lg md:flex-row-reverse md:border-none md:shadow-none md:relative md:h-96 border-[var(--hover-nav)] "
-        >
-          <img
-            src={`/images/project-${project.id}.webp`}
-            alt={project.proyecto_title}
-            className="rounded-t md:w-3/5 w-auto md:h-96 object-cover md:absolute md:right-0 md:rounded"
-            width={1000}
-            height={1000}
-          />
-          <div className="flex flex-col items-center mt-2 md:absolute md:left-0 md:w-full md:items-start last:border-red-500 ">
-            <h1 className="text-3xl font-bold text-center md:w-2/5 md:text-4xl md:text-start">
-              {project.proyecto_title}
-            </h1>
-            <p className="text-start p-4 md:bg-[var(--bg-buttons)] md:rounded-lg md:text-lg md:w-1/2 md:mt-3 font-bold md:text-white md:shadow-xl md:shadow-[var(--nav-shadow)]">
-              {project.proyecto_description}
-            </p>
-            <ul className="flex flex-wrap gap-2 p-4 justify-start mt-3 md:justify-center md:w-2/5 md:mt-3">
-              {project.proyecto_tecnologias.map((tecnologia) => (
-                <li
-                  key={tecnologia}
-                  className="bg-gray-500 p-1 rounded font-bold text-white text-sm"
-                >
-                  {tecnologia}
-                </li>
-              ))}
-            </ul>
-            <div className="flex justify-center gap-5 md:justify-end md:w-2/5 md:mt-3 md:pr-5 mb-5 md:mb-0">
-              <a
-                href={project.proyecto_url_github}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="github"
-              >
-                <BrandGithub className="h-10 w-10 hover:scale-125 hover:text-[var(--bg-buttons)]" />
-              </a>
-              <a
-                href={project.proyecto_url_web}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="web"
-              >
-                <World className="h-10 w-10 hover:scale-125 hover:text-[var(--bg-buttons)]" />
-              </a>
+        <div 
+        key={project.id} 
+        className={`flex ${project.estilo}  mt-20 items-center justify-center border-[var(--hover-nav)] md:relative bg`}>
+      
+        <div className="bg rounded-md shadow-lg">
+          <div className={`md:flex ${project.estilo} px-4 leading-none`}>
+            <div className="flex-none">
+             <img
+              src={`images/project_${project.id}.webp`}
+              alt={`${project.proyecto_title}`}
+              className="h-96 w-72 rounded-md shadow-2xl -translate-y-4 md:transform-none border-4 border-gray-300"
+            />           
+            </div>
+  
+            <div className="flex-col">
+     
+              <h3 className="pt-4 text-3xl font-bold text-center">{project.proyecto_title}</h3>
+              <hr className="hr-text" data-content=""/>
+              <div className="text-md min-w-full md:text-center flex flex-wrap justify-start px-4 my-2">
+                {project.proyecto_tecnologias.map((tecnologia) => (
+                  <span
+                    key={tecnologia}
+                    className="mr-1.5 mt-0.5 font-bold text-sm bg-[var(--bg-buttons)] text-white rounded-lg px-3 py-1"
+                  >
+                    {tecnologia}
+                  </span>
+                ))}
+              </div>
+              <p className="hidden md:block px-4 my-4 text-lg text-left">
+                {project.proyecto_description}
+              </p>
+              
+              <p className="flex text-md px-4 my-2">
+                Rating: 9.0/10 
+                <span className="font-bold px-2">|</span>
+                Mood: Dark
+              </p>
+              
+              <div className="text-xs">
+                <button type="button" className="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline">TRAILER</button>
+                
+                <button type="button" className="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline">IMDB</button>
+                
+                <button type="button" className="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline">AMAZON</button>
+              </div>
+            
             </div>
           </div>
+          <div className={`flex ${project.estilo} justify-between items-center px-4 mb-4 w-full`}>
+            <div className="flex">
+              <a
+                  href={project.proyecto_url_github}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="github"
+                >
+                  <BrandGithub className="h-10 w-10 hover:scale-125 hover:text-[var(--bg-buttons)]" />
+                </a>
+                <a
+                  href={project.proyecto_url_web}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="web"
+                >
+                  <Eye className="h-10 w-10 hover:scale-125 hover:text-[var(--bg-buttons)]" />
+                </a>
+            </div>
+            <div className="flex">
+              <i className="material-icons ml-2 text-yellow-600">sentiment_very_satisfied</i>
+              <i className="material-icons ml-2 text-yellow-600">sentiment_neutral</i>
+              <i className="material-icons ml-2 text-yellow-600">sentiment_very_dissatisfied</i>
+              <i className="material-icons ml-2 text-yellow-600">star_outline</i>
+              <i className="material-icons ml-2 text-yellow-600">star_half</i>
+              <i className="material-icons ml-2 text-yellow-600">star</i>           
+              
+            </div>
+          </div>          
         </div>
+      </div>
       ))}
     </section>
   );
