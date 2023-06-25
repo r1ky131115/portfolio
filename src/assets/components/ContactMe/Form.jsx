@@ -43,7 +43,8 @@ export const Form = () => {
   };
 
   return (
-    <form onSubmit={handleFormSubmit} id="myForm" className=" mt-4 w-full">
+    <form onSubmit={handleFormSubmit} id="myForm" className="w-3/5 md:mr-10">
+      <h4>Formulario de contacto</h4>
       <input
         type="text"
         placeholder="Nombre"

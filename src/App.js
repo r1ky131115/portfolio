@@ -22,7 +22,6 @@ function App() {
       <ProjectsLayout />
       <ContactMeLayout />
       <Footer />
-
       <ButtonToTop />
     </ThemeProvider>
   );

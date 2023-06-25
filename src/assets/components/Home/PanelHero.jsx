@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Send, Download } from "tabler-icons-react";
 import { SocialsIcons } from "./SocialsIcons";
 import profile from "../../images/profile.png";
@@ -6,6 +6,7 @@ import profile from "../../images/profile.png";
 
 export const PanelHero = () => {
   const [scroll, setScroll] = useState(0);
+  const socialIconsScroll  = useRef(null);
 
   const handleScroll = () => {
     window.addEventListener("scroll", (e) => {
@@ -18,7 +19,16 @@ export const PanelHero = () => {
     });
   };
 
+  const scrollBottom = () => {
+    if (document.documentElement.scrollTop > 4300) {
+      socialIconsScroll.current?.classList.add("hidden");
+    } else {
+      socialIconsScroll.current?.classList.remove("hidden");
+    }
+  };
+
   useEffect(() => {
+    window.addEventListener("scroll", scrollBottom);
     handleScroll();
   }, [scroll]);
 
@@ -28,7 +38,7 @@ export const PanelHero = () => {
       className="u-center h-screen w-full flex items-center justify-center relative hover:ease-in"
     >
       <div className="flex flex-col-reverse justify-center items-center h-full">
-        <ul className="fixed bottom-0 left-0 lg:left-10 lg:bottom-10 lg:flex-col flex gap-5 lg:gap-3">
+        <ul id="socialIcons" ref={socialIconsScroll} className="fixed bottom-0 left-0 flex gap-5 lg:left-10 lg:bottom-10 lg:flex-col lg:gap-3 invisible xl:visible">
           <SocialsIcons />
           <div className="hidden w-2 h-20 mx-auto bg-[var(--socials-buttons)] lg:block" />
         </ul>
