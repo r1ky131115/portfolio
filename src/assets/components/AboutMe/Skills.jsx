@@ -1,9 +1,4 @@
-import {
-  Square3Stack3DIcon,
-  CodeBracketIcon,
-  CircleStackIcon,
-  WrenchIcon,
-} from "@heroicons/react/24/outline";
+import { Stack2, Code, Tools, CodeCircle } from "tabler-icons-react";
 
 const skills = [
   {
@@ -11,7 +6,7 @@ const skills = [
     id_dropdown: "frontend/programming language",
     title: "Frontend/Programming language",
     icon: (
-      <CodeBracketIcon
+      <Code
         className="w-36 h-36 text-[var(--bg-buttons)]"
         id="frontend"
         style={{
@@ -48,7 +43,7 @@ const skills = [
     id_dropdown: "backend",
     title: "Backend",
     icon: (
-      <CircleStackIcon
+      <CodeCircle
         className="w-36 h-36 text-[var(--bg-buttons)]"
         id="backend"
         style={{
@@ -80,7 +75,7 @@ const skills = [
     id: 3,
     id_dropdown: "frameworks",
     icon: (
-      <Square3Stack3DIcon
+      <Stack2
         className="w-36 h-36 text-[var(--bg-buttons)]"
         id="testing"
         style={{
@@ -118,7 +113,7 @@ const skills = [
     id_dropdown: "tools",
     title: "Herramientas",
     icon: (
-      <WrenchIcon
+      <Tools
         className="w-36 h-36 text-[var(--bg-buttons)]"
         id="tools"
         style={{

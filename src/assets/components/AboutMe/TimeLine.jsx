@@ -18,13 +18,13 @@ const educationHistory = [
 const workHistory = [
   {
     id: 1,
-    title: "Grupo Datco",
+    title: "Grupo Datco (Freelancer)",
     text: "Consultor IT",
     date: "Abril 2022 - Actualidad",
   },
   {
     id: 2,
-    title: "Arvent Group (Freelancer)",
+    title: "Arvent Group",
     text: "Desarrollador Web .NET",
     date: "Junio 2022 - Actualidad",
   },
