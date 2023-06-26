@@ -88,9 +88,9 @@ export const NavMenu = () => {
             <a
               href="#Home"
               aria-label="Home"
-              className="text-3xl font-extrabold text-[var(--foreground)] hover:scale-110 transition-all duration-300 "
+              className="text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-400 hover:scale-110 transition ease-in-out delay-150 duration-300 "
             >
-              {"{ R | A }"}
+              {"< R / A >"}
             </a>
           </div>
 

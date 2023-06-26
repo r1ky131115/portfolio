@@ -7,9 +7,9 @@ export const Footer = () => {
       <div className="u-center">
         <div className="flex flex-col items-center">
           <p className="text-4xl mt-10 font-bold">
-            Gracias por visitar mi sitio web! 😊
+            Gracias por la visita! 😊
           </p>
-          <p className="mt-10">O también me puedes contactar a través de:</p>
+          <p className="mt-10">Recuerda que puedes contactar a través de:</p>
           <ul className="m-5 flex gap-2">
             <SocialsIcons />
           </ul>
