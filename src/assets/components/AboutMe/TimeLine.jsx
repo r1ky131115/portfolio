@@ -46,7 +46,7 @@ export const TimeLine = ({ showEducation }) => {
               <div className="hidden w-full h-0.5 bg-[var(--bg-buttons)] md:flex" />
             </div>
             <div className="mt-3 sm:pr-8">
-              <h1 className="text-xl font-bold">{item.title}</h1>
+              <h3 className="text-xl font-bold">{item.title}</h3>
               <time className="block mb-2 text-sm font-normal leading-none text-[var(--text-secondary)]">
                 {item.date}
               </time>

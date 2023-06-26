@@ -12,7 +12,7 @@ export const AboutMe = () => {
   return (
     <section className="u-center w-full relative" id="sobreMi">
       <div className="w-full flex flex-col justify-center items-center">
-        <h1 className="text-5xl font-bold">Sobre mí</h1>
+        <h2 className="text-5xl font-bold">Sobre mí</h2>
         <span className="text-lg text-[var(--text-secondary)]">
           Quién soy
         </span>
@@ -41,7 +41,7 @@ export const AboutMe = () => {
         <Skills />
         <div>
           <div className="flex flex-col items-center">
-            <h1 className="text-5xl font-bold">Mi trayectoria.</h1>
+            <h2 className="text-5xl font-bold">Mi trayectoria.</h2>
             <span className="text-lg text-[var(--text-secondary)]">
               Educación y trabajo
             </span>

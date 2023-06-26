@@ -30,11 +30,7 @@ const skills = [
       },
       {
         id: 4,
-        skill: "React JS",
-      },
-      {
-        id: 5,
-        skill: "C #",
+        skill: "C#",
       },
     ],
   },
@@ -92,11 +88,11 @@ const skills = [
       },
       {
         id: 2,
-        skill: "ASP.NET MVC",
+        skill: "Entity Framework",
       },
       {
         id: 3,
-        skill: "Entity Framework",
+        skill: "React JS",
       },
       {
         id: 4,
@@ -138,10 +134,6 @@ const skills = [
       {
         id: 4,
         skill: "Virtualización",
-      },
-      {
-        id: 5,
-        skill: "Agile Methodologies",
       }
     ],
   },
@@ -151,16 +143,16 @@ export const Skills = () => {
   return (
     <section className="mb-10">
       <div className="w-full flex flex-col justify-center items-center mt-10">
-        <h1 className="text-5xl font-bold">Habilidades</h1>
+        <h2 className="text-5xl font-bold">Habilidades</h2>
         <span className="text-lg text-[var(--text-secondary)]">
           Mis conocimientos
         </span>
       </div>
-      <div className="mt-5 grid grid-cols-1 md:grid-cols-2" data-aos="fade-left"
+      <div className="mt-5 grid grid-cols-1 md:grid-cols-2 justify-center" data-aos="fade-left"
      data-aos-duration="3000">
         {skills.map((skill) => (
           <div
-            className="w-full flex justify-center flex-col items-center mt-5"
+            className="w-4/5 flex justify-center flex-col items-center mt-5 m-auto"
             key={skill.id}
           >
             <span className="h-48 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-200">{skill.icon}</span>

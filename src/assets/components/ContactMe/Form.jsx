@@ -44,7 +44,7 @@ export const Form = () => {
 
   return (
     <form onSubmit={handleFormSubmit} id="myForm" className="w-3/5 md:mr-10">
-      <h4>Formulario de contacto</h4>
+      <h3 className="text-2xl mt-10 font-bold">Formulario de contacto</h3>
       <input
         type="text"
         placeholder="Nombre"

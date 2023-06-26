@@ -146,7 +146,7 @@ export const OthersProjects = () => {
   return (
     <section>
       <div className="w-full flex flex-col justify-center items-center mt-8">
-        <h1 className="text-4xl font-bold">Otros proyectos interesantes</h1>
+        <h2 className="text-4xl font-bold">Otros proyectos interesantes</h2>
       </div>
       <div className="relative grid md:grid-cols-2 lg:grid-cols-3 gap-3 bg">
         {othersProjects.map((project) => (
@@ -175,9 +175,9 @@ export const OthersProjects = () => {
                 </a>
               </div>
             </div>
-            <h1 className="text-3xl font-bold mt-4 text-center">
+            <h3 className="text-3xl font-bold mt-4 text-center">
               {project.proyecto_title}
-            </h1>
+            </h3>
             <p className="text-lg mt-3">{project.proyecto_description}</p>
             <div className="flex flex-row justify-center items-center mt-4 gap-4 font-bold flex-wrap">
               {project.proyecto_tecnologias.map((tecnologia) => (

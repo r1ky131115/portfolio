@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { Send, Download } from "tabler-icons-react";
 import { SocialsIcons } from "./SocialsIcons";
-import profile from "../../images/profile.png";
+import profile from "../../images/profile.webp";
 
 
 export const PanelHero = () => {

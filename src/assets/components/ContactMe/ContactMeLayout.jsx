@@ -11,7 +11,7 @@ export const ContactMeLayout = () => {
     >
 
       <div className="w-full justify-center">
-        <h1 className="flex flex-col justify-center items-center w-full font-semibold text-xl md:text-2xl ">
+        <h2 className="flex flex-col justify-center items-center w-full font-semibold text-xl md:text-2xl ">
           Ahora o nunca!
           <span className="bg-[var(--bg-buttons)] text-4xl font-bold rounded-md p-3 w-fit relative text-white mt-2 md:text-5xl lg:text-6xl">
             Contact&aacute;me.&#160;
@@ -19,7 +19,7 @@ export const ContactMeLayout = () => {
               &#160;
             </span>
           </span>
-        </h1>
+        </h2>
         <p className="mt-2 p-2 text-xl text-start">
           Si quieres contactarme conmigo, puedes hacerlo a través de las redes
           sociales o llenando el formulario de contacto. Te responderé lo antes
