@@ -20,7 +20,7 @@ export const ContactMeLayout = () => {
             </span>
           </span>
         </h2>
-        <p className="mt-2 p-2 text-xl text-start">
+        <p className="mt-2 p-2 text-xl md:text-start text-center">
           Si quieres contactarme conmigo, puedes hacerlo a través de las redes
           sociales o llenando el formulario de contacto. Te responderé lo antes
           posible. ¡Gracias! 😊

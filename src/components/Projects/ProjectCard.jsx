@@ -16,8 +16,8 @@ const projectsInfo = [
     proyecto_url_web: "",
     proyecto_tecnologias: [
       "ASP.NET",
-      "Bootstrap",
       "Entity Framework",
+      "Bootstrap",
     ],
     imagePaths: imagen1,
   },
@@ -30,7 +30,7 @@ const projectsInfo = [
     proyecto_url_github:
       "https://github.com/r1ky131115/ListaTareasPendientes",
     proyecto_url_web: "",
-    proyecto_tecnologias: ["ASP.NET", "Bootstrap", "Entity Framework"],
+    proyecto_tecnologias: ["ASP.NET", "Entity Framework", "Bootstrap"],
     imagePaths: imagen2,
   },
   {
@@ -53,7 +53,7 @@ export const ProjectCard = () => {
       {projectsInfo.map((project) => (
         <div 
         key={project.id} 
-        className={`flex ${project.estilo}  mt-20 items-center justify-center border-[var(--hover-nav)] md:relative bg`}>
+        className={`flex ${project.estilo} mt-20 items-center justify-center border-[var(--hover-nav)] md:relative bg`}>
       
         <div className="bg rounded-md shadow-lg">
           <div className={`md:flex ${project.estilo} px-4 leading-none`}>
@@ -61,7 +61,10 @@ export const ProjectCard = () => {
              <img
               src={project.imagePaths}
               alt={`${project.proyecto_title}`}
-              className="h-96 w-72 rounded-md shadow-2xl -translate-y-4 md:transform-none border-4 border-gray-300"
+              className="rounded-md shadow-2xl -translate-y-4 md:transform-none border-2 border-[var(--hover-nav)]"
+              priority
+              width={500}
+              height={500}
             />           
             </div>
             <img src="" alt="" srcset="" />
@@ -69,7 +72,7 @@ export const ProjectCard = () => {
      
               <h3 className="pt-4 text-3xl font-bold text-center">{project.proyecto_title}</h3>
               <hr className="hr-text" data-content=""/>
-              <div className="text-md min-w-full md:text-center flex flex-wrap justify-start px-4 my-2">
+              <div className="text-md min-w-full md:text-center flex flex-wrap items-center justify-center md:justify-start px-4 my-2">
                 {project.proyecto_tecnologias.map((tecnologia) => (
                   <span
                     key={tecnologia}
@@ -89,7 +92,7 @@ export const ProjectCard = () => {
                 Mood: Dark
               </p> */}
               
-              <div className="text-xs">
+              <div className="text-xs flex items-center justify-center md:justify-start">
                 <button type="button" className="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline">RESPONSIVE</button>
                 
                 <button type="button" className="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline">MODE DARK</button>

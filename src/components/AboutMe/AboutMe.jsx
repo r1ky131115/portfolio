@@ -17,11 +17,11 @@ export const AboutMe = () => {
           Quién soy
         </span>
       </div>
-      <div  data-aos="fade-right" data-aos-delay="50"
+      <div data-aos="fade-right" data-aos-delay="50"
           data-aos-duration="1500">
         <p className="mt-5 text-xl text-center">
           <span className="font-bold">Software Developer,</span> apasionado por
-          el desarrollo Frontend y Backend ♥️.<br /> Puedes ver algunos de
+          el desarrollo Frontend y Backend con .NET ♥️.<br /> Puedes ver algunos de
           mis proyectos en la sección de{" "}
           <a className="font-bold inline-flex" href="#misProyectos">
             proyectos.
