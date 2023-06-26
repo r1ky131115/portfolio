@@ -1,4 +1,8 @@
-import { BrandGithub, Eye } from "tabler-icons-react";
+import { BrandGithub } from "tabler-icons-react";
+import imagen1 from '../../assets/project_1.webp';
+import imagen2 from '../../assets/project_2.webp';
+import imagen3 from '../../assets/project_3.webp';
+
 
 const projectsInfo = [
   {
@@ -6,37 +10,40 @@ const projectsInfo = [
     proyecto_title: "Login & Register",
     estilo: "flex-row",
     proyecto_description:
-      "Permite buscar citas de los personajes de la serie, también permite ver los detalles de cada personaje de la familia Simpson y ver algunas noticias relacionadas a la serie.",
+      "Sitio web que simula el login y registro de usuarios en una aplicación web.",
     proyecto_url_github:
-      "",
+      "https://github.com/r1ky131115/ProyectoLogin",
     proyecto_url_web: "",
     proyecto_tecnologias: [
       "ASP.NET",
       "Bootstrap",
       "Entity Framework",
     ],
+    imagePaths: imagen1,
   },
   {
     id: 2,
-    proyecto_title: "Rick and Morty App",
+    proyecto_title: "Lista de tareas pendientes",
     estilo: "flex-row-reverse",
     proyecto_description:
-      "Permite buscar personajes de la serie, ver sus detalles y ver episodios relacionados a cada personaje, además de poder agregarlos a favoritos.",
+      "Permite crear, editar, eliminar y ver las tareas pendientes de una lista de tareas. Tambien dispone de un modo dark y light para elegir entre ellos.",
     proyecto_url_github:
-      "",
+      "https://github.com/r1ky131115/ListaTareasPendientes",
     proyecto_url_web: "",
-    proyecto_tecnologias: ["ReactJS", "Redux", "TypeScript", "JSDoc"],
+    proyecto_tecnologias: ["ASP.NET", "Bootstrap", "Entity Framework"],
+    imagePaths: imagen2,
   },
   {
     id: 3,
-    proyecto_title: "Github Issues",
+    proyecto_title: "Agenda",
     estilo: "flex-row",
     proyecto_description:
-      "Permite seguir el estado de los issues de un repositorio de Github, además de poder filtrarlos por estado. Se utilizó React Query para manejar el estado de la aplicación. ",
+      "Este es el tan conocido CRUD en forma de agenda el cual permite crear, editar, eliminar y ver los usuarios.",
     proyecto_url_github:
-      "",
+      "https://github.com/r1ky131115/ASP.NET-CRUD-b-sico-",
     proyecto_url_web: "",
-    proyecto_tecnologias: ["ReactJS", "React Query", "TypeScript"],
+    proyecto_tecnologias: ["ASP.NET", "Bootstrap", "SQLServer"],
+    imagePaths: imagen3,
   },
 ];
 
@@ -52,12 +59,12 @@ export const ProjectCard = () => {
           <div className={`md:flex ${project.estilo} px-4 leading-none`}>
             <div className="flex-none">
              <img
-              src={`images/project_${project.id}.webp`}
+              src={project.imagePaths}
               alt={`${project.proyecto_title}`}
               className="h-96 w-72 rounded-md shadow-2xl -translate-y-4 md:transform-none border-4 border-gray-300"
             />           
             </div>
-  
+            <img src="" alt="" srcset="" />
             <div className="flex-col">
      
               <h3 className="pt-4 text-3xl font-bold text-center">{project.proyecto_title}</h3>
@@ -76,24 +83,24 @@ export const ProjectCard = () => {
                 {project.proyecto_description}
               </p>
               
-              <p className="flex text-md px-4 my-2">
+              {/* <p className="flex text-md px-4 my-2">
                 Rating: 9.0/10 
                 <span className="font-bold px-2">|</span>
                 Mood: Dark
-              </p>
+              </p> */}
               
               <div className="text-xs">
-                <button type="button" className="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline">TRAILER</button>
+                <button type="button" className="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline">RESPONSIVE</button>
                 
-                <button type="button" className="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline">IMDB</button>
+                <button type="button" className="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline">MODE DARK</button>
                 
-                <button type="button" className="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline">AMAZON</button>
+                <button type="button" className="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline">WEB</button>
               </div>
             
             </div>
           </div>
           <div className={`flex ${project.estilo} justify-between items-center px-4 mb-4 w-full`}>
-            <div className="flex">
+            <div className="flex mt-1">
               <a
                   href={project.proyecto_url_github}
                   target="_blank"
@@ -102,14 +109,14 @@ export const ProjectCard = () => {
                 >
                   <BrandGithub className="h-10 w-10 hover:scale-125 hover:text-[var(--bg-buttons)]" />
                 </a>
-                <a
+                {/* <a
                   href={project.proyecto_url_web}
                   target="_blank"
                   rel="noreferrer"
                   aria-label="web"
                 >
                   <Eye className="h-10 w-10 hover:scale-125 hover:text-[var(--bg-buttons)]" />
-                </a>
+                </a> */}
             </div>
             <div className="flex">
               <i className="material-icons ml-2 text-yellow-600">sentiment_very_satisfied</i>

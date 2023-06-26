@@ -1,12 +1,12 @@
 import { ThemeProvider } from 'next-themes';
-import { AboutMe } from './assets/components/AboutMe/AboutMe';
-import ParticlesBackground from './assets/components/Config/ParticlesBackground';
-import { ButtonToTop } from './assets/components/Home/ButtonToTop';
-import { PanelHero } from './assets/components/Home/PanelHero';
-import { NavMenu } from './assets/components/NavMenu/NavMenu';
-import { ProjectsLayout } from './assets/components/Projects/ProjectsLayout';
-import { ContactMeLayout } from './assets/components/ContactMe/ContactMeLayout';
-import { Footer } from './assets/components/Footer/Footer';
+import { AboutMe } from './components/AboutMe/AboutMe';
+import ParticlesBackground from './components/Config/ParticlesBackground';
+import { ButtonToTop } from './components/Home/ButtonToTop';
+import { PanelHero } from './components/Home/PanelHero';
+import { NavMenu } from './components/NavMenu/NavMenu';
+import { ProjectsLayout } from './components/Projects/ProjectsLayout';
+import { ContactMeLayout } from './components/ContactMe/ContactMeLayout';
+import { Footer } from './components/Footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
